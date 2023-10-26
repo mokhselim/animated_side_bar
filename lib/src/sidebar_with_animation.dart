@@ -1,5 +1,3 @@
-
-
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +46,7 @@ class SideBarAnimated extends StatefulWidget {
     this.floatingAnimationDuration = const Duration(milliseconds: 120),
     this.dividerColor = const Color(0xff929292),
     this.textStyle =
-    const TextStyle(fontFamily: "SFPro", fontSize: 16, color: Colors.white),
+        const TextStyle(fontFamily: "SFPro", fontSize: 16, color: Colors.white),
     required this.mainLogoImage,
     required this.sidebarItems,
     required this.widthSwitch,
@@ -93,7 +91,7 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
     _counterTimer = Timer.periodic(
       Duration(
           milliseconds: widget.floatingAnimationDuration.inMilliseconds ~/ 10),
-          (Timer timer) {
+      (Timer timer) {
         if (_itemIndex.round() == index) {
           setState(() {
             _itemIndex = index.toDouble();
@@ -170,8 +168,8 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
                                 highlightColor: widget.highlightColor,
                                 width: _width,
                                 icon:
-                                widget.sidebarItems[index].iconUnselected ??
-                                    widget.sidebarItems[index].iconSelected,
+                                    widget.sidebarItems[index].iconUnselected ??
+                                        widget.sidebarItems[index].iconSelected,
                                 text: widget.sidebarItems[index].text,
                                 onTap: () => moveToNewIndex(index));
                           },
