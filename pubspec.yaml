@@ -2,6 +2,7 @@ name: sidebar_with_animation
 description: Animated collapsible smooth sidebar with full control to customize it for your own designs for Flutter apps
 version: 0.0.1+2
 homepage: https://github.com/mokhselim/animated_side_bar.git
+repository: https://github.com/mokhselim/animated_side_bar.git
 
 
 environment:
@@ -18,13 +19,12 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 # This package supports all platforms listed below.
-platforms:
-  android:
-  ios:
-  linux:
-  macos:
-  web:
-  windows:
+topics:
+  - widget
+  - ui
+  - drawer
+  - navigation
+  - sidebar
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
