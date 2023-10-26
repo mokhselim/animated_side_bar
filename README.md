@@ -40,6 +40,10 @@ SideBarAnimated(
     ],
     ),
 ~~~~
+Values that you can changed
+
+<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/values.png?raw=true">
+
 <td>
 
 </td>
