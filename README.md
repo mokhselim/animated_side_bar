@@ -21,6 +21,7 @@ SideBarAnimated(
     onTap: (s) {
       //use the index to change the main screens
     },
+      //add or remove divider for settings
     widthSwitch: 700,
     mainLogoImage: 'assets/logo.png',
     sidebarItems: [
@@ -34,6 +35,7 @@ SideBarAnimated(
     ],
     ),
 ~~~~
+
 
 <td>
 
