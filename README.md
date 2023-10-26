@@ -66,6 +66,5 @@ SideBarAnimated(
 this is v1 is mainly made for Flutter web , macOS and Windows "Big screens" will improve it by the time to make it good for small screens as well, Thanks.
 
 Love to hear from you and get feedback and upgrade requests
-mokhselim@gmail.com
 # animated_side_bar
 # animated_side_bar
