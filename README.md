@@ -20,6 +20,25 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 <img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/Screenshot%202023-10-26%20at%2011.08.30%E2%80%AFPM.png?raw=true">
 
 
+
+Values that you can changed
+
+<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/values.png?raw=true">
+
+<td>
+
+</td>
+
+## Getting started
+
+TODO: List prerequisites and provide or point to information on how to
+start using the package.
+
+## Usage
+
+TODO: Include short and useful examples for package users. Add longer examples
+to `/example` folder.
+
 ~~~~dart
 
 SideBarAnimated(
@@ -40,27 +59,6 @@ SideBarAnimated(
     ],
     ),
 ~~~~
-Values that you can changed
-
-<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/values.png?raw=true">
-
-<td>
-
-</td>
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
 
 ## Additional information
 
