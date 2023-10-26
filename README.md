@@ -19,7 +19,6 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 
 <img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/Screenshot%202023-10-26%20at%2011.08.09%E2%80%AFPM.png?raw=true">
 
-[//]: # (<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/Screenshot%202023-10-26%20at%2011.08.30%E2%80%AFPM.png?raw=true">)
 
 
 
