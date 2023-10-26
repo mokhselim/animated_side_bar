@@ -1,3 +1,3 @@
 library animated_side_bar;
 
-export 'src/animated_sidebar.dart';
+export 'src/sidebar_with_animation.dart';
