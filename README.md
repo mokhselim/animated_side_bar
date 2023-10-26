@@ -24,26 +24,13 @@ SideBarAnimated(
     widthSwitch: 700,
     mainLogoImage: 'assets/logo.png',
     sidebarItems: [
-    SideBarItemsModel(
+      ///add side bar Items
+      SideBarItem(
     iconSelected: Icons.home_rounded,
+    //unselected just if you need to use two different icons for selected 
     iconUnselected: Icons.home_outlined,
     text: 'Home',
-    ),
-    SideBarItemsModel(
-    iconSelected: Icons.account_balance_wallet,
-    iconUnselected: Icons.account_balance_wallet_outlined,
-    text: 'Insights',
-    ),
-    SideBarItemsModel(
-    iconSelected: CupertinoIcons.chart_bar_square_fill,
-    iconUnselected: CupertinoIcons.chart_bar_square,
-    text: 'Feature',
-    ),
-    SideBarItemsModel(
-    iconSelected: Icons.settings,
-    iconUnselected: Icons.settings_outlined,
-    text: 'Settings',
-    ),
+       ),
     ],
     ),
 ~~~~

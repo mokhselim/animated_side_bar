@@ -25,7 +25,7 @@ class SideBarAnimated extends StatefulWidget {
   // double sideBarItemHeight;
   double sideBarSmallWidth;
   String mainLogoImage;
-  List<SideBarItemsModel> sidebarItems;
+  List<SideBarItem> sidebarItems;
   bool settingsDivider;
   Curve curve;
   TextStyle textStyle;
@@ -308,12 +308,12 @@ Widget sideBarItem({
   );
 }
 
-class SideBarItemsModel {
+class SideBarItem {
   final IconData iconSelected;
   final IconData? iconUnselected;
   final String text;
 
-  SideBarItemsModel({
+  SideBarItem({
     required this.iconSelected,
     this.iconUnselected,
     required this.text,
