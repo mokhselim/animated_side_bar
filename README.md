@@ -15,16 +15,16 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 
 ## Features
 <img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355354/sidebar/vdk7fzpiobikynrws3pw.png">
-<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/2.gif?raw=true">
-
-<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/Screenshot%202023-10-26%20at%2011.08.09%E2%80%AFPM.png?raw=true">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355350/sidebar/syo8iuhylnvhwh4bfnq5.png">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355355/sidebar/hziqmoxwtkhiwnuvvq8y.gif">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355349/sidebar/ou709zs4j5dh9krl9vy0.gif">
 
 
 
 
 Values that you can changed
 
-<img src="https://github.com/mokhselim/animated_side_bar/blob/main/lib/screens/values.png?raw=true">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355337/sidebar/vzcjytzqbmuyd49kwr6d.png">
 
 <td>
 
@@ -63,6 +63,9 @@ SideBarAnimated(
 
 ## Additional information
 
-this is v1 is mainly made for Flutter web , macOS and Windows "Big screens" will improve it by the time to make it good for small screens as well, Thanks
+this is v1 is mainly made for Flutter web , macOS and Windows "Big screens" will improve it by the time to make it good for small screens as well, Thanks.
+
+Love to hear from you and get feedback and upgrade requests
+mokhselim@gmail.com
 # animated_side_bar
 # animated_side_bar
