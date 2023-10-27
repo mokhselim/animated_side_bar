@@ -26,7 +26,7 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 
 
 ## Features
-<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355354/sidebar/vdk7fzpiobikynrws3pw.png">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355354/sidebar/vdk7fzpiobikynrws3pw.png" sizes="500">
 <img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355350/sidebar/syo8iuhylnvhwh4bfnq5.png">
 
 
@@ -38,7 +38,7 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 
 ### Values that you can customize
 
-<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355337/sidebar/vzcjytzqbmuyd49kwr6d.png" border="">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355337/sidebar/vzcjytzqbmuyd49kwr6d.png">
 
 <td>
 
