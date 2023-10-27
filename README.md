@@ -11,14 +11,12 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 ## Description
-Animated collapsible sidebar for Flutter apps with very cool animation and responsive with full control to customize the colors and texts and almost everything
+Animated collapsible sidebar for Flutter apps " macOS & Web & Windows & Linux " with very cool animation and responsive with full control to customize the colors and texts and almost everything
 
 # This package supports all platforms listed below.
 
 ### **platforms:**
 
-* android
-* ios
 * linux
 * macos
 * web
