@@ -83,16 +83,19 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
     super.dispose();
   }
 
+  //Animation creator function
   void moveToNewIndex(int index) {
     setState(() {
       _counterTimer.cancel();
     });
-
+//Here we start the timer update every 12 milliseconds
     _counterTimer = Timer.periodic(
       Duration(
           milliseconds: widget.floatingAnimationDuration.inMilliseconds ~/ 10),
       (Timer timer) {
+
         if (_itemIndex.round() == index) {
+          //here when we reach the index then we stop because we hit the targeted index
           setState(() {
             _itemIndex = index.toDouble();
             timer.cancel();
@@ -101,6 +104,7 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
           widget.onTap?.call(index);
         } else if (_itemIndex.floor() < index) {
           setState(() => _itemIndex += 0.1);
+
         } else {
           setState(() => _itemIndex -= 0.1);
         }
@@ -112,7 +116,7 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
   Widget build(BuildContext context) {
     _height = MediaQuery.sizeOf(context).height;
     _width = MediaQuery.sizeOf(context).width;
-
+//using animated container for the side bar for smooth responsive
     return AnimatedContainer(
       curve: widget.curve,
       height: _height,
@@ -252,6 +256,10 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
   }
 }
 
+/*
+Sidebar model Widget the we used it inside the ListView with inkwell to make each item clickable
+ */
+
 Widget sideBarItem({
   required IconData icon,
   required String text,
@@ -305,6 +313,12 @@ Widget sideBarItem({
   );
 }
 
+/*
+Sidebar model contains two icon data and string for the text
+main Icon can't be null but unselected icon can be null and in this case it will be the main Icon
+ */
+
+// Sidebar model
 class SideBarItem {
   final IconData iconSelected;
   final IconData? iconUnselected;
