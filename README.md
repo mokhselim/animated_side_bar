@@ -26,7 +26,7 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 
 
 ## Features
-<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355354/sidebar/vdk7fzpiobikynrws3pw.png" sizes="500 , 500">
+<img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355354/sidebar/vdk7fzpiobikynrws3pw.png">
 <img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355350/sidebar/syo8iuhylnvhwh4bfnq5.png">
 
 
@@ -40,11 +40,9 @@ Animated collapsible sidebar for Flutter apps with very cool animation and respo
 
 <img src="https://res.cloudinary.com/dcvoshrrl/image/upload/v1698355337/sidebar/vzcjytzqbmuyd49kwr6d.png">
 
-<td>
 
-</td>
 
-## Getting started
+[//]: # (## Getting started)
 
 
 [//]: # (start using the package.)
@@ -77,8 +75,8 @@ SideBarAnimated(
 
 ## Additional information
 
-this is v1 is mainly made for Flutter web , macOS and Windows "Big screens" will improve it by the time to make it good for small screens as well, Thanks.
+#### This is v1 is mainly made for Flutter web , macOS and Windows "Big screens" will improve it by the time to make it good for small screens as well, Thanks.
 
-Love to hear from you and get feedback and upgrade requests
-# animated_side_bar
+#### Love to hear from you and get feedback and upgrade requests
+
 # animated_side_bar
