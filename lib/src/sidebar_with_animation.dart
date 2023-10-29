@@ -93,7 +93,6 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
       Duration(
           milliseconds: widget.floatingAnimationDuration.inMilliseconds ~/ 10),
       (Timer timer) {
-
         if (_itemIndex.round() == index) {
           //here when we reach the index then we stop because we hit the targeted index
           setState(() {
@@ -104,7 +103,6 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
           widget.onTap?.call(index);
         } else if (_itemIndex.floor() < index) {
           setState(() => _itemIndex += 0.1);
-
         } else {
           setState(() => _itemIndex -= 0.1);
         }
