@@ -1,3 +1,3 @@
-## 0.0.2+1
+## 0.0.3
 
-Adding example for documentations. Thanks
+Timer removed to make it one time animation for better performance.

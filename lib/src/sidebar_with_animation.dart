@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-//ignore: must_be_immutable
+///ignore: must_be_immutable
 class SideBarAnimated extends StatefulWidget {
   final ValueChanged<int>? onTap;
   Color sideBarColor;
@@ -43,7 +43,7 @@ class SideBarAnimated extends StatefulWidget {
     this.settingsDivider = true,
     this.curve = Curves.easeOut,
     this.sideBarAnimationDuration = const Duration(milliseconds: 700),
-    this.floatingAnimationDuration = const Duration(milliseconds: 120),
+    this.floatingAnimationDuration = const Duration(milliseconds: 500),
     this.dividerColor = const Color(0xff929292),
     this.textStyle =
         const TextStyle(fontFamily: "SFPro", fontSize: 16, color: Colors.white),
@@ -83,38 +83,40 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
     super.dispose();
   }
 
-  //Animation creator function
+  ///Animation creator function
   void moveToNewIndex(int index) {
     setState(() {
       _counterTimer.cancel();
     });
-//Here we start the timer update every 12 milliseconds
-    _counterTimer = Timer.periodic(
-      Duration(
-          milliseconds: widget.floatingAnimationDuration.inMilliseconds ~/ 10),
-      (Timer timer) {
-        if (_itemIndex.round() == index) {
-          //here when we reach the index then we stop because we hit the targeted index
-          setState(() {
-            _itemIndex = index.toDouble();
-            timer.cancel();
-            _counterTimer.cancel();
-          });
-          widget.onTap?.call(index);
-        } else if (_itemIndex.floor() < index) {
-          setState(() => _itemIndex += 0.1);
-        } else {
-          setState(() => _itemIndex -= 0.1);
-        }
-      },
-    );
+
+    ///Timer removed to make it one time animation for better performance
+    // _counterTimer = Timer.periodic(
+    //   Duration(
+    //       milliseconds: widget.floatingAnimationDuration.inMilliseconds ~/ 10),
+    //       (Timer timer) {
+    // if (_itemIndex.round() == index) {
+    ///here when we reach the index then we stop because we hit the targeted index
+    setState(() {
+      _itemIndex = index.toDouble();
+      // timer.cancel();
+      _counterTimer.cancel();
+    });
+    widget.onTap?.call(index);
+    // } else if (_itemIndex.floor() < index) {
+    //   setState(() => _itemIndex += 1);
+    // } else {
+    //   setState(() => _itemIndex -= 1);
+    // }
+    //   },
+    // );
   }
 
   @override
   Widget build(BuildContext context) {
     _height = MediaQuery.sizeOf(context).height;
     _width = MediaQuery.sizeOf(context).width;
-//using animated container for the side bar for smooth responsive
+
+    ///using animated container for the side bar for smooth responsive
     return AnimatedContainer(
       curve: widget.curve,
       height: _height,
@@ -254,9 +256,7 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
   }
 }
 
-/*
-Sidebar model Widget the we used it inside the ListView with inkwell to make each item clickable
- */
+/// Sidebar model Widget the we used it inside the ListView with inkwell to make each item clickable
 
 Widget sideBarItem({
   required IconData icon,
@@ -311,12 +311,9 @@ Widget sideBarItem({
   );
 }
 
-/*
-Sidebar model contains two icon data and string for the text
-main Icon can't be null but unselected icon can be null and in this case it will be the main Icon
- */
+///Sidebar model contains two icon data and string for the text main Icon can't be null but unselected icon can be null and in this case it will be the main Icon
 
-// Sidebar model
+/// Sidebar model
 class SideBarItem {
   final IconData iconSelected;
   final IconData? iconUnselected;
