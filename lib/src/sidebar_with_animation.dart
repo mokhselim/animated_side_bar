@@ -57,37 +57,44 @@ class SideBarAnimated extends StatefulWidget {
   State<SideBarAnimated> createState() => _SideBarAnimatedState();
 }
 
-class _SideBarAnimatedState extends State<SideBarAnimated> {
+class _SideBarAnimatedState extends State<SideBarAnimated>
+    with SingleTickerProviderStateMixin {
   late double _width;
   late double _height;
   late double sideBarItemHeight = 48;
   double _itemIndex = 0.0;
   bool _minimize = false;
-  late Timer _counterTimer;
+  late AnimationController _animationController;
+  late Animation<double> _floating;
+  // late Timer _counterTimer;
 
   @override
   void initState() {
     if (widget.sidebarItems.isEmpty) {
       throw "Side bar Items Can't be empty";
     }
+    _animationController = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 200))
+      ..addListener(() {
+        setState(() {});
+      });
 
-    _counterTimer =
-        Timer.periodic(const Duration(minutes: 10000), (Timer timer) {});
-    _counterTimer.cancel();
+    _floating = Tween<double>(begin: 0, end: 1).animate(CurvedAnimation(
+        parent: _animationController, curve: Curves.fastOutSlowIn));
     super.initState();
   }
 
   @override
   void dispose() {
-    _counterTimer.cancel();
+    // _counterTimer.cancel();
     super.dispose();
   }
 
   ///Animation creator function
   void moveToNewIndex(int index) {
-    setState(() {
-      _counterTimer.cancel();
-    });
+    // setState(() {
+    // _counterTimer.cancel();
+    // });
 
     ///Timer removed to make it one time animation for better performance
     // _counterTimer = Timer.periodic(
@@ -99,7 +106,7 @@ class _SideBarAnimatedState extends State<SideBarAnimated> {
     setState(() {
       _itemIndex = index.toDouble();
       // timer.cancel();
-      _counterTimer.cancel();
+      // _counterTimer.cancel();
     });
     widget.onTap?.call(index);
     // } else if (_itemIndex.floor() < index) {
